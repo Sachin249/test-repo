@@ -1,2 +1,2 @@
 # test-repo
-this repository contains test codesn 123
+this repository contains test codesn readme
