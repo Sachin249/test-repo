@@ -20,8 +20,8 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.post('/test',(req,res)=>{
-    console.log(req.body)
+app.get('/test',(req,res)=>{
+    res.send("server is working")
 })
 app.use('/entry',require('./controllers/entrycontroller'))
 
