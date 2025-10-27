@@ -29,6 +29,11 @@ app.get('/test2',(req,res)=>{
 })
 
 
+app.get('/new',(req,res)=>{
+    res.send("server is working")
+})
+
+
 app.use('/entry',require('./controllers/entrycontroller'))
 
 app.post("/add-user",upload.single('avatar'),(req,res)=>{
