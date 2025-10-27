@@ -23,6 +23,12 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.get('/test',(req,res)=>{
     res.send("server is working")
 })
+
+app.get('/test2',(req,res)=>{
+    res.send("server is working")
+})
+
+
 app.use('/entry',require('./controllers/entrycontroller'))
 
 app.post("/add-user",upload.single('avatar'),(req,res)=>{
